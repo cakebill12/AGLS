@@ -4,165 +4,103 @@
   <meta charset="UTF-8" />
   <title>Abundant Grace Living | Safe, Supportive Housing Community</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Abundant Grace Living provides safe, affordable housing for seniors, veterans, and adults."
-  />
+  <meta name="description" content="Abundant Grace Living provides safe, affordable, all-inclusive housing for seniors, veterans, and adults seeking a supportive community." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="site-header">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="/AGLS/logo2.png" alt="Abundant Grace Living Logo" class="site-logo" />
 
-  <div class="header-inner container">
+        <div class="brand-text">
+          <span class="brand-title">Abundant Grace Living</span>
+          <span class="brand-subtitle">Supportive Housing Community</span>
+        </div>
+      </a>
 
-    <a href="index.html" class="brand">
-      <img src="/AGLS/logo2.png" alt="Abundant Grace Living Logo" class="site-logo" />
+      <button class="nav-toggle" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
 
-      <div class="brand-text">
-        <span class="brand-title">Abundant Grace Living</span>
-        <span class="brand-subtitle">Supportive Housing Community</span>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link nav-link-active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#mission" class="nav-link">Mission</a></li>
+          <li><a href="contact.html" class="nav-link nav-link-accent">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media">
+        <div class="hero-image" style="background-image:url('/AGLS/hero-home.jpg')"></div>
+        <div class="hero-overlay"></div>
       </div>
-    </a>
 
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
+      <div class="hero-content container">
+        <h1>Welcome to Abundant Grace Living</h1>
+        <p class="hero-subtitle">
+          Safe, affordable, all-inclusive housing for seniors, veterans, and adults.
+        </p>
 
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html" class="nav-link nav-link-active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#mission" class="nav-link">Mission</a></li>
-        <li><a href="contact.html" class="nav-link nav-link-accent">Contact</a></li>
-      </ul>
-    </nav>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">Learn More</a>
+          <a class="btn btn-outline" href="contact.html">Contact Us</a>
+        </div>
 
-  </div>
-</header>
-
-<main id="main-content">
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-media">
-    <div class="hero-image" style="background-image:url('/AGLS/hero-home.jpg');"></div>
-    <div class="hero-overlay"></div>
-  </div>
-
-  <div class="hero-content container">
-    <h1>Welcome to Abundant Grace Living</h1>
-    <p class="hero-subtitle">
-      Safe, affordable, supportive housing for seniors, veterans, and adults.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#about" class="btn btn-primary">Learn More</a>
-      <a href="contact.html" class="btn btn-outline">Contact</a>
-    </div>
-
-    <div class="hero-pill">
-      Dignity, independence, and peace of mind.
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section section-light">
-  <div class="container section-grid">
-
-    <div class="section-text">
-      <h2>About Us</h2>
-      <p>We provide safe, supportive housing focused on dignity and care.</p>
-      <p>Residents are supported while maintaining independence and comfort.</p>
-
-      <div class="inline-cta">
-        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        <div class="hero-pill">
+          Dignity • Independence • Comfort
+        </div>
       </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-light">
+      <div class="container section-grid">
+
+        <div class="section-text">
+          <h2>About Us</h2>
+          <p>We provide safe, supportive housing for adults, seniors, and veterans.</p>
+          <p>Our goal is dignity, independence, and community.</p>
+
+          <div class="inline-cta">
+            <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="section-media">
+          <figure class="image-card">
+            <img src="/AGLS/about-community.jpg" alt="Community" />
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Abundant Grace Living</span>
     </div>
+  </footer>
 
-    <div class="section-media">
-      <img src="/AGLS/about-community.jpg" alt="Community living" class="image-card" />
-    </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section section-soft">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>Services</h2>
-      <p>Care and support tailored to each resident.</p>
-    </div>
-
-    <div class="card-grid">
-
-      <article class="service-card">
-        <h3>Private Rooms</h3>
-        <p>Comfortable private living spaces.</p>
-      </article>
-
-      <article class="service-card">
-        <h3>Medication Management</h3>
-        <p>Safe and organized medication support.</p>
-      </article>
-
-      <article class="service-card">
-        <h3>Daily Support</h3>
-        <p>Help with everyday living needs.</p>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- MISSION -->
-<section id="mission" class="section section-mission">
-  <div class="container mission-inner">
-
-    <h2>Our Mission</h2>
-    <p>
-      To provide safe, affordable housing with dignity, respect, and support for all residents.
-    </p>
-
-    <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
-
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-
-  <div class="container footer-grid">
-
-    <div>
-      <h2>Abundant Grace Living</h2>
-      <p>Safe, supportive housing community.</p>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <p>Email: Abundantgraceliving@gmail.com</p>
-      <p>Phone: 904-982-8262</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © <span id="year"></span> Abundant Grace Living
-  </div>
-
-</footer>
-
-<script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
