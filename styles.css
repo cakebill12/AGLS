@@ -157,41 +157,50 @@ body {
 /* Brand */
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  gap: 0.65rem;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
 }
 
-.brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 10px;
-  background-color: #f5ede1;
-  border: 1px solid rgba(162, 144, 112, 0.55);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--color-sage-deep);
+.site-logo {
+    width: auto;
+    height: 58px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
 }
 
 .brand-text {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .brand-title {
-  font-weight: 600;
-  font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 .brand-subtitle {
-  font-size: 0.78rem;
-  color: var(--color-text-muted);
+    font-size: .9rem;
+    opacity: .8;
+}
+
+@media (max-width: 768px) {
+    .site-logo {
+        height: 46px;
+    }
+
+    .brand-title {
+        font-size: 1.15rem;
+    }
+
+    .brand-subtitle {
+        font-size: .75rem;
+    }
 }
 
 /* Nav */
