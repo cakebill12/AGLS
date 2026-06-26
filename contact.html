@@ -2,76 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | Abundant Grace Living</title>
+  <title>Contact Us | Abundant Grace Living</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Contact Abundant Grace Living to learn more about safe, affordable, all-inclusive housing for seniors, veterans, and adults."
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-<header class="site-header">
-  <div class="header-inner">
+  <header class="site-header" aria-label="Main navigation">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Abundant Grace Living home">
+        <img src="/logo2.png" alt="Abundant Grace Living logo" class="brand-mark" />
+        <div class="brand-text">
+          <span class="brand-title">Abundant Grace Living</span>
+          <span class="brand-subtitle">Supportive Housing Community</span>
+        </div>
+      </a>
 
-    <a href="index.html" class="brand">
-      <img src="/AGLS/logo2.png" class="site-logo" alt="Logo" />
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
 
-      <div class="brand-text">
-        <span class="brand-title">Abundant Grace Living</span>
-        <span class="brand-subtitle">Supportive Housing</span>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link nav-link-active nav-link-accent">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Contact Hero -->
+    <section class="contact-hero" aria-labelledby="contact-heading">
+      <div
+        class="contact-hero-image"
+        role="img"
+        aria-label="A friendly staff member greeting visitors at the front entrance."
+        style="background-image: url('/contact-header.jpg');"
+      ></div>
+      <div class="contact-hero-overlay"></div>
+      <div class="container contact-hero-inner">
+        <h1 id="contact-heading">Contact Abundant Grace Living</h1>
+        <p>
+          We’re honored to support you as you explore safe, supportive housing
+          options for yourself or a loved one.
+        </p>
       </div>
-    </a>
+    </section>
 
-    <nav class="main-nav">
-      <ul>
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link nav-link-active" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Contact Content -->
+    <section class="section section-light" aria-label="Contact information and form">
+      <div class="container contact-grid">
+        <!-- Info -->
+        <aside class="contact-info animate-on-scroll" aria-label="Contact details">
+          <h2>Get in Touch</h2>
+          <p>
+            We’re here to answer your questions and provide the information you
+            need to make a confident decision.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Contact Person</span>
+              <span class="contact-value">Kimwana Benson</span>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a class="contact-value" href="mailto:Abundantgraceliving@gmail.com">Abundantgraceliving@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Phone</span>
+              <a class="contact-value" href="tel:19049828262">904-982-8262</a>
+            </li>
+            <li>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Jacksonville, Florida</span>
+            </li>
+          </ul>
+          
+        </aside>
 
-  </div>
-</header>
 
-<main>
+      </div>
+    </section>
 
-<section class="contact-hero">
-  <div class="contact-hero-image" style="background-image:url('/AGLS/contact-header.jpg')"></div>
-  <div class="contact-hero-overlay"></div>
+    <!-- FAQ -->
+    <section class="section section-soft" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </header>
+        <div class="faq-list">
+          <article class="faq-item animate-on-scroll">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>Who can live at Abundant Grace Living?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                We provide housing for seniors, veterans, and adults seeking a safe
+                and supportive living environment.
+              </p>
+            </div>
+          </article>
 
-  <div class="container contact-hero-inner">
-    <h1>Contact Us</h1>
-    <p>We’re here to help you explore housing options.</p>
-  </div>
-</section>
+          <article class="faq-item animate-on-scroll">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>Are private rooms available?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Yes. Residents have access to comfortable private rooms designed
+                for privacy and comfort.
+              </p>
+            </div>
+          </article>
 
-<section class="section section-light">
-  <div class="container contact-grid">
+          <article class="faq-item animate-on-scroll">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>Do you provide medication management?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Yes. Medication management services are available to help
+                residents safely manage prescribed medications.
+              </p>
+            </div>
+          </article>
 
-    <aside class="contact-info">
-      <h2>Get in Touch</h2>
+          <article class="faq-item animate-on-scroll">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span>What support services are offered?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Support services are available to assist residents with daily
+                living needs while encouraging independence and maintaining
+                dignity.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      <p>We respond quickly to all inquiries.</p>
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>Abundant Grace Living</h2>
+        <p class="footer-mission">
+          Providing safe, affordable, all-inclusive housing where seniors,
+          veterans, and adults can live with dignity, independence, and peace of
+          mind.
+        </p>
+      </div>
 
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:Abundantgraceliving@gmail.com">Abundantgraceliving@gmail.com</a></li>
-        <li>Phone: <a href="tel:19049828262">904-982-8262</a></li>
-        <li>Location: Jacksonville, Florida</li>
-      </ul>
-    </aside>
+      <nav class="footer-nav" aria-label="Quick links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-  </div>
-</section>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:Abundantgraceliving@gmail.com">Abundantgraceliving@gmail.com</a>
+          </li>
+          <li>
+            Phone:
+            <a href="tel:19049828262">904-982-8262</a>
+          </li>
+          <li>Contact Person: Kimwana Benson</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Abundant Grace Living. All rights reserved.</span>
+    </div>
+  </footer>
 
-</main>
-
-<footer class="site-footer">
-  <div class="footer-bottom">
-    © <span id="year"></span> Abundant Grace Living
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-<script src="scripts.js"></script>
+  <script type="module" src="scripts.js"></script>
 </body>
 </html>
