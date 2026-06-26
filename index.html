@@ -4,34 +4,38 @@
   <meta charset="UTF-8" />
   <title>Abundant Grace Living | Safe, Supportive Housing Community</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Abundant Grace Living provides safe, affordable, all-inclusive housing for seniors, veterans, and adults seeking a supportive community." />
+  <meta
+    name="description"
+    content="Abundant Grace Living provides safe, affordable, all-inclusive housing for seniors, veterans, and adults seeking a supportive community."
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="site-header">
+  <header class="site-header" aria-label="Main navigation">
     <a class="skip-link" href="#main-content">Skip to main content</a>
-
     <div class="header-inner">
-      <a href="index.html" class="brand">
-        <img src="/AGLS/logo2.png" alt="Abundant Grace Living Logo" class="site-logo" />
-
+      <a href="index.html" class="brand" aria-label="Abundant Grace Living home">
+        <img src="/logo2.png" alt="Abundant Grace Living logo" class="brand-mark" />
         <div class="brand-text">
           <span class="brand-title">Abundant Grace Living</span>
           <span class="brand-subtitle">Supportive Housing Community</span>
         </div>
       </a>
 
-      <button class="nav-toggle" aria-expanded="false">
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
       </button>
 
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html" class="nav-link nav-link-active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
           <li><a href="#mission" class="nav-link">Mission</a></li>
           <li><a href="contact.html" class="nav-link nav-link-accent">Contact</a></li>
@@ -41,66 +45,294 @@
   </header>
 
   <main id="main-content">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-media">
-        <div class="hero-image" style="background-image:url('/AGLS/hero-home.jpg')"></div>
+    <!-- Hero -->
+    <section
+      class="hero"
+      aria-labelledby="hero-heading"
+    >
+      <div class="hero-media" aria-hidden="true">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="A beautiful modern residential home at sunrise with happy seniors walking outside, green landscaping, and warm lighting."
+          style="background-image: url('/hero-home.jpg');"
+        ></div>
         <div class="hero-overlay"></div>
       </div>
-
-      <div class="hero-content container">
-        <h1>Welcome to Abundant Grace Living</h1>
+      <div class="hero-content container animate-on-scroll">
+        <h1 id="hero-heading">Welcome to Abundant Grace Living</h1>
         <p class="hero-subtitle">
-          Safe, affordable, all-inclusive housing for seniors, veterans, and adults.
+          Safe, affordable, all-inclusive housing for seniors, veterans, and adults
+          seeking a supportive community.
         </p>
-
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#about">Learn More</a>
-          <a class="btn btn-outline" href="contact.html">Contact Us</a>
+          <a href="#about" class="btn btn-primary">Learn More</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
         </div>
-
         <div class="hero-pill">
-          Dignity • Independence • Comfort
+          Providing dignity, independence, and peace of mind in a welcoming home.
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-light">
+    <!-- About -->
+    <section id="about" class="section section-light" aria-labelledby="about-heading">
       <div class="container section-grid">
-
-        <div class="section-text">
-          <h2>About Us</h2>
-          <p>We provide safe, supportive housing for adults, seniors, and veterans.</p>
-          <p>Our goal is dignity, independence, and community.</p>
-
+        <div class="section-text animate-on-scroll">
+          <h2 id="about-heading">About Abundant Grace Living</h2>
+          <p>
+            At Abundant Grace Living, our mission is to provide safe, affordable,
+            all-inclusive housing for seniors, veterans, and adults seeking a
+            supportive community.
+          </p>
+          <p>
+            We are dedicated to fostering dignity, independence, and peace of mind
+            by creating a welcoming environment where every resident feels
+            respected, valued, and truly at home.
+          </p>
+          <p>
+            Our goal is to provide more than just housing—we strive to create a
+            caring community where residents can enjoy comfort, security,
+            companionship, and personalized support while maintaining as much
+            independence as possible.
+          </p>
+          <p>
+            Every individual deserves to live in a place where they feel safe,
+            appreciated, and surrounded by compassionate people who genuinely care.
+          </p>
           <div class="inline-cta">
-            <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
           </div>
         </div>
-
-        <div class="section-media">
+        <div class="section-media animate-on-scroll">
           <figure class="image-card">
-            <img src="/AGLS/about-community.jpg" alt="Community" />
+            <img
+              src="/about-community.jpg"
+              alt="Smiling seniors sitting together in a comfortable living room talking with a caregiver."
+              loading="lazy"
+            />
           </figure>
         </div>
-
       </div>
     </section>
 
+    <!-- Services -->
+    <section
+      id="services"
+      class="section section-soft"
+      aria-labelledby="services-heading"
+    >
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2 id="services-heading">Our Services</h2>
+          <p>
+            Thoughtfully designed support to help residents feel safe, comfortable,
+            and at home.
+          </p>
+        </header>
+
+        <div class="card-grid">
+          <!-- Private Rooms -->
+          <article class="service-card animate-on-scroll">
+            <div class="service-body">
+              <h3>Private Rooms</h3>
+              <p>
+                Residents enjoy clean, comfortable, private rooms designed to
+                provide personal space, privacy, and a peaceful living
+                environment.
+              </p>
+            </div>
+            <figure class="service-image">
+              <img
+                src="/private-room.jpg"
+                alt="A clean furnished private bedroom with natural lighting."
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <!-- Medication Management -->
+          <article class="service-card animate-on-scroll">
+            <div class="service-body">
+              <h3>Medication Management</h3>
+              <p>
+                Our medication management services help residents stay on schedule
+                with prescribed medications while promoting health, safety, and
+                peace of mind.
+              </p>
+            </div>
+            <figure class="service-image">
+              <img
+                src="/medication-management.jpg"
+                alt="A caregiver helping organize medication in a weekly pill organizer."
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <!-- Support Services -->
+          <article class="service-card animate-on-scroll">
+            <div class="service-body">
+              <h3>Support Services</h3>
+              <p>
+                We provide compassionate support services that help residents
+                maintain independence while receiving assistance with daily living
+                needs.
+              </p>
+            </div>
+            <figure class="service-image">
+              <img
+                src="/support-services.jpg"
+                alt="A caregiver assisting a senior with daily activities while smiling."
+                loading="lazy"
+              />
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section
+      class="section section-light"
+      aria-labelledby="why-heading"
+    >
+      <div class="container section-grid section-grid-reverse">
+        <div class="section-text animate-on-scroll">
+          <h2 id="why-heading">Why Choose Abundant Grace Living</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Safe Housing</h3>
+              <p>
+                A secure environment where residents can feel protected and
+                comfortable every day.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Affordable Living</h3>
+              <p>
+                Affordable, all-inclusive housing with transparent pricing and no
+                unnecessary stress.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Caring Community</h3>
+              <p>
+                A welcoming atmosphere built around compassion, friendship, and
+                respect.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Personalized Support</h3>
+              <p>
+                Every resident receives individualized attention based on their
+                unique needs.
+              </p>
+            </article>
+          </div>
+          <div class="inline-cta">
+            <a href="contact.html" class="btn btn-primary">Schedule a Conversation</a>
+          </div>
+        </div>
+        <div class="section-media animate-on-scroll">
+          <figure class="image-card">
+            <img
+              src="/happy-residents.jpg"
+              alt="Several seniors and veterans enjoying conversation outside in a peaceful garden."
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section
+      id="mission"
+      class="section section-mission"
+      aria-labelledby="mission-heading"
+    >
+      <div class="container mission-inner animate-on-scroll">
+        <h2 id="mission-heading">Our Mission</h2>
+        <p>
+          At Abundant Grace Living, our mission is to provide safe, affordable,
+          all-inclusive housing for seniors, veterans, and adults seeking a
+          supportive community. We are committed to fostering dignity,
+          independence, compassion, and peace of mind through exceptional housing
+          and personalized support in a welcoming environment where every resident
+          feels respected, valued, and at home.
+        </p>
+        <a href="contact.html" class="btn btn-outline-light">
+          Talk With Our Team
+        </a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      class="section section-cta"
+      aria-labelledby="cta-heading"
+    >
+      <div
+        class="cta-background"
+        role="img"
+        aria-label="A welcoming front entrance of a beautiful residential home with warm evening lighting."
+        style="background-image: url('/cta-home.jpg');"
+      ></div>
+      <div class="cta-overlay"></div>
+      <div class="container cta-inner animate-on-scroll">
+        <h2 id="cta-heading">Ready to Learn More?</h2>
+        <p>
+          We're here to answer your questions and help you find a welcoming place
+          to call home.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Contact Us
+        </a>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Abundant Grace Living</span>
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>Abundant Grace Living</h2>
+        <p class="footer-mission">
+          Providing safe, affordable, all-inclusive housing where seniors,
+          veterans, and adults can live with dignity, independence, and peace of
+          mind.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Quick links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:Abundantgraceliving@gmail.com">Abundantgraceliving@gmail.com</a>
+          </li>
+          <li>
+            Phone:
+            <a href="tel:19049828262">904-982-8262</a>
+          </li>
+          <li>Contact Person: Kimwana Benson</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Abundant Grace Living. All rights reserved.</span>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-  <script src="scripts.js"></script>
+  <script type="module" src="scripts.js"></script>
 </body>
 </html>
