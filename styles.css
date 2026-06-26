@@ -1,22 +1,35 @@
 /* Base styles */
 
 :root {
-  --color-bg: #f7f4ef;
-  --color-bg-soft: #edf4f7;
-  --color-bg-mission: #e2ede6;
-  --color-sage: #7fa48b;
-  --color-sage-deep: #547766;
-  --color-blue-soft: #5d88b8;
-  --color-gold: #c79b4b;
-  --color-text: #253036;
-  --color-text-muted: #5f6c74;
-  --color-white: #ffffff;
-  --shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.08);
-  --radius-card: 14px;
-  --radius-pill: 999px;
-  --transition-fast: 0.18s ease-out;
-  --transition-med: 0.25s ease;
-  --max-width: 1120px;
+  /* Brand Colors */
+  color-bg: #F7F3EB;              /* Ivory background */
+  color-bg-soft: #FCF9F3;
+  color-bg-mission: #F4F0E6;
+
+  /* Greens (from logo) */
+  color-sage: #7C8F73;            /* Light sage leaves */
+  color-sage-deep: #0F3B33;       /* Main logo green */
+
+  /* Golds (from logo) */
+  color-gold: #B8862E;            /* Primary gold */
+  color-gold-light: #C79A4A;
+  color-gold-dark: #9D6F1F;
+
+  /* Text */
+  color-text: #1E302A;
+  color-text-muted: #5F6A63;
+  color-white: #FFFFFF;
+
+  /* Effects */
+  shadow-soft: 0 14px 40px rgba(15, 59, 51, 0.10);
+
+  radius-card: 14px;
+  radius-pill: 999px;
+
+  transition-fast: .18s ease-out;
+  transition-med: .25s ease;
+
+  max-width: 1120px;
 }
 
 *,
